@@ -12,7 +12,8 @@ html {
 body {
     box-sizing: border-box;
     position: relative;
-    // font-family: "Mont", sans-serif;
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
 }
 main {
     position: relative;
@@ -26,6 +27,11 @@ a {
 }
 .wrapper {
     margin: 0 auto;
-    width: 80%;
-    // max-width: grid width;
+    width: 90%;
+    max-width: 1050px;
+}
+
+section:not(.banner) {
+    position: relative;
+    z-index: 1;
 }

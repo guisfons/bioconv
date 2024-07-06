@@ -1,0 +1,122 @@
+.footer {
+    &__selo {
+        display: flex;
+        justify-content: center;
+        margin: 13.7rem auto 17rem;
+
+        figure {
+            width: fit-content;
+            animation: rotate-animation 10s infinite linear;
+        }
+    }
+
+    &__usinas {
+        padding: 5.9rem 0;
+        background-image: linear-gradient(to right, #23550A 20%, rgba(255, 255, 255, 0)), url('../img/footer-bg.webp');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        color: $white;
+
+        h4 {
+            font-size: 3.6rem;
+            line-height: 4.8rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 2.7rem;
+            line-height: 4.8rem;
+            margin: .6rem 0 3rem;
+        }
+
+        a {
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 4.8rem;
+            color: #3F6532;
+
+            padding: 1.2rem 2.6rem;
+            background-color: #C1E02A;
+            border-radius: 2.5rem;
+        }
+    }
+
+    &__content {
+        padding: 8.1rem 0 9.8rem;
+        background-color: $phthalogreen;
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        h5 {
+            width: 100%;
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 4.8rem;
+            color: $leaf;
+        }
+
+        a {
+            color: $white;
+            font-size: 2rem;
+            line-height: 4.8rem;
+            
+            svg {
+                max-width: 3.8rem;
+                path {
+                    fill: $white !important;
+                }
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6.8rem 20rem;
+        max-width: 69rem;
+        width: 100%;
+    }
+
+    &__contato, &__social {
+        width: 100%;
+    }
+
+    &__contato {
+        max-width: 27rem;
+    }
+
+    &__social {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 4rem;
+        max-width: 22rem;
+    }
+
+    &__endereco {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+            color: $white;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+        }
+    }
+
+    &__logo {
+        max-width: 17.7rem;
+        width: 100%;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}

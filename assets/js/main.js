@@ -1,20 +1,25 @@
-$(document).ready(function () {
-    $(window).on('resize', function () {
-        wrapperDistance()
-    })
+window.addEventListener('load', function() {
+    header()
 })
 
-function wrapperDistance() {
-    let distance = $('.wrapper').offset().left
+function header() {
+    let header = document.querySelector('.header')
+    let headerTop = document.querySelector('.header__top')
+    let menu = document.querySelector('.header__menu')
+    headerTop.style.height = headerTop.clientHeight + 'px'
 
-    $('.wrapper-left').each(function () {
-        $(this).css({ 'padding-left': distance + 'px' })
-    })
-    $('.wrapper-right').each(function () {
-        $(this).css({ 'padding-right': distance + 'px' })
+    window.addEventListener('scroll', function() {
+        let menuOffset = menu.offsetTop;
+        if (window.scrollY >= menuOffset) {
+            header.classList.add('header--fixed')
+        } else {
+            header.classList.remove('header--fixed')
+        }
     })
 
-    $('.wrapper-full').each(function () {
-        $(this).css({ 'padding': '0 ' + distance + 'px' })
-    })
+    // Header not in frontpage
+    if(!document.querySelector('.banner')) {
+        header.classList.add('header--static')
+        document.querySelector('main').style.marginTop = header.clientHeight + 'px'
+    }
 }
