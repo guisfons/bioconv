@@ -1,5 +1,7 @@
 window.addEventListener('load', function() {
     header()
+
+    if(document.querySelector('.colaboradores')) { colaboradores() }
 })
 
 function header() {
@@ -22,4 +24,25 @@ function header() {
         header.classList.add('header--static')
         document.querySelector('main').style.marginTop = header.clientHeight + 'px'
     }
+}
+
+function colaboradores() {
+    let colaboradores = document.querySelectorAll('.colaboradores__item')
+    let maxLength = 0
+    let longestElement = null, shortestElement = null
+
+    colaboradores.forEach(function(el, i){
+        let length = el.querySelector('p').textContent.trim().length;
+        if (length > maxLength) {
+            maxLength = length
+            longestElement = el
+        } else {
+            shortestElement = el
+        }
+    })
+
+    let longestElementHeight = longestElement.querySelector('p').clientHeight
+    let shortestElementHeight = shortestElement.querySelector('p').clientHeight
+
+    shortestElement.querySelector('p').style.marginBottom = (longestElementHeight - shortestElementHeight) + 'px'
 }

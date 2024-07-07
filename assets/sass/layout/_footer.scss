@@ -120,3 +120,47 @@
         }
     }
 }
+
+.saiba-mais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6.1rem;
+
+    margin-top: 22.5rem;
+
+    a {
+        max-width: 46rem;
+        width: 100%;
+        height: 54rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6.9rem;
+        border-radius: 18.5rem;
+
+        span {
+            font-size: 4rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &:first-of-type {
+            background-color: #5F9341;
+
+            span {
+                color: #3F5235;
+            }
+        }
+
+        &:last-of-type {
+            background-color: #97C25F;
+
+            span {
+                color: #5F9341;
+            }
+        }
+    }
+}

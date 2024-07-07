@@ -1,0 +1,87 @@
+@import '../abstracts/variables';
+
+.busca {
+    & > span {
+        font-size: 3.6rem;
+        line-height: 4.8rem;
+        display: block;
+
+        &:first-of-type {
+            font-weight: 600;
+            color: #5F9341;
+            text-transform: uppercase;
+        }
+
+        &:last-of-type {
+            margin-top: 2.9rem;
+        }
+    }
+
+    &__conteudo {
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        margin: 8rem 0 20rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3.7rem;
+
+        &:not(:last-of-type) {
+            border-bottom: .1rem solid #D9D9D9;
+            padding-bottom: 4.1rem;
+        }
+
+        article {
+            span {
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 3rem;
+                color: #5F9341;
+            }
+
+            p {
+                font-size: 2rem;
+                line-height: 3rem;
+            }
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #D8D018;
+            max-width: 18.2rem;
+            width: 100%;
+            height: 5.76rem;
+            border-radius: 16.5rem;
+
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 1;
+            color: $white;
+            text-transform: uppercase;
+        }
+    }
+
+    &__mais {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        padding: 3.5rem;
+        background-color: #D8D018;
+        border-radius: 16.4rem;
+
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 600;
+        color: $white;
+
+        cursor: pointer;
+    }
+}

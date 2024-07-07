@@ -1,11 +1,13 @@
 @import 'abstracts/variables';
 @import 'abstracts/fonts';
 @import 'abstracts/utilities';
-@import 'components/title';
 
 @import 'base/reset';
 
 @import 'layout/footer';
 @import 'layout/header';
 
-@import 'pages/home';
+@import 'components/title';
+@import 'components/video';
+@import 'components/blobs';
+@import 'components/cards';

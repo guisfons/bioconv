@@ -1,0 +1,40 @@
+.blobs {
+    display: flex;
+    justify-content: center;
+    gap: 13.5rem;
+    margin-bottom: 14rem;
+
+    &__item {
+        max-width: 40rem;
+        width: 100%;
+        height: 40rem;
+        aspect-ratio: 1;
+        
+        padding: 6rem;
+        border-radius: 50%;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.7rem;
+
+        &:first-of-type {
+            background-color: #4B75F9;
+        }
+
+        &:last-of-type {
+            background-color: #F4317B;
+        }
+
+        span {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 2.4rem;
+            max-width: 28.3rem;
+            width: 100%;
+        }
+    }
+}

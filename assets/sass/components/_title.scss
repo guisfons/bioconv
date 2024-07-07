@@ -4,7 +4,7 @@
     align-items: center;
     gap: 4.5rem;
 
-    max-width: 81.9rem;
+    max-width: 110rem;
     width: 90%;
     padding: 10.9rem 0 13.7rem;
     margin: 0 auto;
@@ -15,6 +15,7 @@
         height: 6.125rem;
         background-image: url('../img/icons/leaf.svg');
         background-size: contain;
+        background-repeat: no-repeat;
     }
 
     &::after {
@@ -28,6 +29,7 @@
         
         font-size: 9.32rem;
         text-transform: uppercase;
+        text-align: center;
         width: fit-content;
         color: rgba(0, 0, 0, 0);
     }

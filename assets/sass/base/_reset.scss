@@ -25,6 +25,12 @@ a {
     color: inherit;
     text-decoration: none;
 }
+input, button, textarea, select {
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
 .wrapper {
     margin: 0 auto;
     width: 90%;
