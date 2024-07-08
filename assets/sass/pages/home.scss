@@ -162,6 +162,11 @@
 
                 margin-top: 5.2rem;
 
+                @include max (800) {
+                    font-size: 3.8rem;
+                    white-space: normal;
+                }
+
                 strong {
                     color: #5F9341;
                 }
