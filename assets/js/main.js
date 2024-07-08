@@ -19,11 +19,9 @@ function header() {
         }
     })
 
-    // Header not in frontpage
-    if(!document.querySelector('.banner')) {
-        header.classList.add('header--static')
-        document.querySelector('main').style.marginTop = header.clientHeight + 'px'
-    }
+    document.querySelector('.header__button').addEventListener('click', function() {
+        this.classList.toggle('header__button--active')
+    })
 }
 
 function colaboradores() {

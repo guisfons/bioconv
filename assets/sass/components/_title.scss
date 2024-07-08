@@ -4,7 +4,7 @@
     align-items: center;
     gap: 4.5rem;
 
-    max-width: 110rem;
+    max-width: 140rem;
     width: 90%;
     padding: 10.9rem 0 13.7rem;
     margin: 0 auto;
@@ -27,10 +27,14 @@
         background-clip: text;
         background-attachment: fixed;
         
-        font-size: 9.32rem;
+        font-size: 13.2rem;
         text-transform: uppercase;
         text-align: center;
         width: fit-content;
         color: rgba(0, 0, 0, 0);
+
+        @include max (800) {
+            font-size: 7rem;
+        }
     }
 }

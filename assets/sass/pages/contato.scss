@@ -16,7 +16,7 @@
         form {
             display: flex;
             flex-direction: column;
-            gap: 8rem;
+            gap: 3rem;
 
             & > * {
                 max-width: 100%;
@@ -28,20 +28,21 @@
                 font-weight: 500;
                 line-height: 3rem;
                 
-                padding: 5.7rem;
+                padding: 2.7rem;
                 background-color: #F0F0F0;
-                border-radius: 10rem;
+                border-radius: 3rem;
             }
 
             textarea {
                 min-height: 26.9rem;
+                resize: none;
             }
 
             button {
                 background-color: #D8D018;
-                padding: 3.5rem;
+                padding: 2.5rem;
 
-                font-size: 3rem;
+                font-size: 2.4rem;
                 text-transform: uppercase;
                 color: $white;
 

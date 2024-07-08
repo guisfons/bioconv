@@ -46,13 +46,15 @@
             color: #D8D018;
         }
 
-        p {
-            color: $white;
-            margin-bottom: 4rem;
-            
+        p, li {
+            color: $white;            
             font-size: 3rem;
             line-height: 4rem;
             margin: 0;
+        }
+
+        p {
+            margin-bottom: 4rem;
         }
 
         strong {
@@ -61,12 +63,6 @@
 
         ul {
             list-style: none;
-
-            li {
-                font-size: 1.8rem;
-                line-height: 2.4rem;
-                color: $white;
-            }
         }
     }
 
@@ -75,15 +71,14 @@
         padding: 17.2rem 0;
     }
 
-    &-mvv {
+    &--mvv {
         article {
             max-width: inherit;
 
-            p {
-                font-size: 1.8rem;
+            p, li {
+                font-size: 2rem;
                 line-height: 2.4rem;
                 color: $white;
-                margin-bottom: 4rem;
             }
         }
     }

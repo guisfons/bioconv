@@ -6,7 +6,7 @@
     box-sizing: inherit;
 }
 html {
-    font-size: 62.5%;
+    font-size: 50%;
     scroll-behavior: smooth;
 }
 body {
@@ -14,9 +14,21 @@ body {
     position: relative;
     font-family: "Gabarito", sans-serif;
     font-optical-sizing: auto;
+
+    &:not(.pagina-inicial):not(.home) {
+        main {
+            margin-top: 35rem;
+
+            @include max (800) {
+                margin-top: 14rem;
+            }
+        }
+    }
 }
 main {
     position: relative;
+    margin-top: 0px;
+    transition: .3s ease-in-out;
 }
 img {
     max-width: 100%;
@@ -29,6 +41,8 @@ input, button, textarea, select {
     appearance: none;
     border: none;
     outline: none;
+    font-family: inherit;
+    font-weight: inherit;
 }
 
 .wrapper {
