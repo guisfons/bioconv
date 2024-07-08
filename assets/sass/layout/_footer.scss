@@ -5,8 +5,13 @@
         margin: 13.7rem auto 17rem;
 
         figure {
-            width: fit-content;
-            animation: rotate-animation 10s infinite linear;
+            max-width: 25.9rem;
+            width: 100%;
+            animation: rotate-animation 10s infinite linear reverse;
+
+            svg {
+                width: 100%;
+            }
         }
     }
 
