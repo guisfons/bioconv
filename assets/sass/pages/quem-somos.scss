@@ -42,7 +42,8 @@
             @include max (800) {
                 position: relative;
                 top: 0;
-                max-width: 100%;
+                max-width: 40rem;
+                width: 70%;
                 aspect-ratio: initial;
                 border-radius: 2rem 2rem 0 0;
                 padding: 2rem;
@@ -78,6 +79,10 @@
             align-items: flex-end;
             border-radius: 6rem;
             overflow: hidden;
+
+            @include max (800) {
+                height: 50vh;
+            }
 
             &::after {
                 content: '';

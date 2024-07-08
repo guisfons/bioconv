@@ -9,13 +9,21 @@
     padding: 10.9rem 0 13.7rem;
     margin: 0 auto;
 
+    @include max (600) {
+        gap: 0;
+    }
+
     &::before, &::after {
         content: '';
-        width: 5.787rem;
-        height: 6.125rem;
+        min-width: 5.787rem;
+        min-height: 6.125rem;
         background-image: url('../img/icons/leaf.svg');
         background-size: contain;
         background-repeat: no-repeat;
+
+        @include max (330) {
+            display: none;
+        }
     }
 
     &::after {
