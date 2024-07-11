@@ -1,5 +1,6 @@
 window.addEventListener('load', function() {
     header()
+    AOS.init()
 
     if(document.querySelector('.colaboradores')) { colaboradores() }
 })

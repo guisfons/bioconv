@@ -144,9 +144,8 @@
     }
 
     a {
-        max-width: 46rem;
+        max-width: calc(50% - 6.1rem);
         width: 100%;
-        height: 54rem;
 
         display: flex;
         flex-direction: column;
@@ -155,11 +154,10 @@
         gap: 6.9rem;
 
         padding: 3rem;
-        border-radius: 18.5rem;
+        border-radius: 2rem;
 
         @include max (800) {
             max-width: calc(50% - 6.1rem);
-            border-radius: 2rem;
             max-height: 20rem;
             align-self: stretch;
             gap: 3rem;
@@ -174,7 +172,7 @@
         }
 
         span {
-            font-size: 4rem;
+            font-size: 3rem;
             text-align: center;
             text-transform: uppercase;
             display: flex;
